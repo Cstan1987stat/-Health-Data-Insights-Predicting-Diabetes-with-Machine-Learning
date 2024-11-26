@@ -10,6 +10,7 @@ The initial_notebook.ipynb file includes the following steps:
 
 
 **November 25, 2024 Update**
-
 The notebook titled 'first model building process.ipynb' documents the initial fitting of three models: Logistic Regression, Random Forest Classifier, and Histogram Gradient Boosting Classifier. The highest f1-score achieved so far is 0.48, obtained with the Histogram Gradient Boosting Classifier. While this is below the desired performance, it represents a good starting point. There's significant opportunity for improvement, and I plan to explore further refinements and optimizations to enhance the model's performance.
 
+**November 26, 2024 Update**
+The notebook titled 'a_second_attempt.ipynb' documents the new preprocessing steps applied to the training and testing predictors (one-hot encoding of discrete variables), along with stratification of the target variable. The objective was to fit multiple models, including Logistic Regression, Random Forest Classifier, Balanced Random Forest Classifier, Histogram Gradient Boosting Classifier, and XGB Classifier, to achieve a higher F1 score for diabetic instances. However, the best F1 score remained at 0.48, achieved by both the Histogram Gradient Boosting Classifier and the XGB Classifier.
