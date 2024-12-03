@@ -13,13 +13,16 @@ The initial_notebook.ipynb file includes the following steps:
 
 The notebook titled 'first model building process.ipynb' documents the initial fitting of three models: Logistic Regression, Random Forest Classifier, and Histogram Gradient Boosting Classifier. The highest f1-score achieved so far is 0.48, obtained with the Histogram Gradient Boosting Classifier. While this is below the desired performance, it represents a good starting point. There's significant opportunity for improvement, and I plan to explore further refinements and optimizations to enhance the model's performance.
 
+
 **November 26, 2024 Update**
 
 The notebook titled 'a_second_attempt.ipynb' documents the new preprocessing steps applied to the training and testing predictors (one-hot encoding of discrete variables), along with stratification of the target variable. The objective was to fit multiple models, including Logistic Regression, Random Forest Classifier, Balanced Random Forest Classifier, Histogram Gradient Boosting Classifier, and XGB Classifier, to achieve a higher F1 score for diabetic instances. However, the best F1 score remained at 0.48, achieved by both the Histogram Gradient Boosting Classifier and the XGB Classifier.
 
+
 **November 28, 2024 Update**
 
 The notebook titled 'analyzing the scoring.ipynb' documents the exploration of recall, precision, and F1 score for the Histogram Gradient Boosting (HistGradientBoost) and XGBoost (XGB) classifier models predicting whether an individual is diabetic. Attempts were made to adjust the threshold used by each model to determine whether the predicted probability warranted a diabetic or non-diabetic classification. Additionally, oversampling of the minority class (SMOTE) and a combination of oversampling the minority class with undersampling the majority class (SMOTE combined) were applied to the training data. The issue with the threshold adjustments was that the F1 score only reached a maximum of 0.48 for both the HistGradientBoost and XGBoost classifiers. If the focus were instead on maximizing recall or precision, it would have been easy to adjust the threshold to achieve a suitable score. For the SMOTE models, the model with the oversampled minority class failed to generalize to the testing data, as the training data had approximately balanced classes, but the testing data was heavily imbalanced. For the combined-SMOTE model, there were no noticeable improvements at all.
+
 
 **December 3, 2024 Update**
 
