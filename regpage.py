@@ -1,5 +1,6 @@
 import streamlit as st
 import joblib
+import pandas as pd
 
 model = joblib.load("lg.joblib.diab")
 
