@@ -134,9 +134,11 @@ df = pd.DataFrame([question_answers], columns=cols)
 
 column_transformer = joblib.load("column_transformer.joblib.diab")
 
-pred = column_transform.transform(df)
+pred = column_transformer.transform(df)
 
+ans = model.predict(pred)
 
+st.write(ans)
 
 
 
