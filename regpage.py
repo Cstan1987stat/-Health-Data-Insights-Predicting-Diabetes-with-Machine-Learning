@@ -12,10 +12,8 @@ question1_dict = {"General Health is Excellent": 1.0, "General Health is Very Go
 question1_ans = question1_dict[question1]
 
 question2 = st.number_input("Enter the value that represents how many of the past 30 days your physical health wasn't good from 0 to 30")
-question2_ans = question2.astype("float")
 
 question3 = st.number_input("Enter the value that represents how many of the past 30 days your mental health wans't good from 0 to 30")
-question3_ans = question3.astype("float")
 
 question4_options = ["Yes", "No"]
 question4 = st.selectbox("If you have any form of insurance, select Yes. If not, select NO", question4_options)
