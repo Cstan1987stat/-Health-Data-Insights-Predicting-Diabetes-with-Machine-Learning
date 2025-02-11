@@ -19,7 +19,7 @@ question3_ans = question3.astype("float")
 
 question4_options = ["Yes", "No"]
 question4 = st.selectbox("If you have any form of insurance, select Yes. If not, select NO", question4_options)
-question4_dict = {"Yes": 1.0, "No", 0.0}
+question4_dict = {"Yes": 1.0, "No": 0.0}
 question4_ans = question4_dict[question4]
 
 question5_options = question4_options 
