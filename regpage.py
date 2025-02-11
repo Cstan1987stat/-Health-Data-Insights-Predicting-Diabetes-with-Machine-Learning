@@ -124,18 +124,18 @@ cols = ['general_health', 'physical_health_days', 'mental_health_days',
        'lifetime_asthma', 'arthritis', 'sex', 'age', 'height_inches', 'bmi',
        'education_level', 'income_group', 'smoking_status',
        'alcohol_consumption', 'binge_drinking', 'heavy_drinking',
-       'diabetes_status', 'difficulty_walking']
+       'difficulty_walking']
 
 st.write(len(cols))
 st.write(len(question_answers))
 
 
-'''df = pd.DataFrame([question_answers], columns=cols)  
+df = pd.DataFrame([question_answers], columns=cols)  
 
 column_transformer = joblib.load("column_transformer.joblib.diab")
 
 pred = column_transform.transform(df)
-'''
+
 
 
 
