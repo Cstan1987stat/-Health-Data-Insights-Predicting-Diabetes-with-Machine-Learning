@@ -23,7 +23,7 @@ question4_ans = question4_dict[question4]
 question5_options = question4_options 
 question5 = st.selectbox("If you have had physical activiity or excercise in the past 30 days other than your job, select Yes. If not, select No", question5_options)
 question5_dict = question4_dict
-question5_ans = question5_dict[question5_dict]
+question5_ans = question5_dict[question5]
 
 question6_options = ["150+", "1-149", "0"]
 question6 = st.selectbox("Select the option that corresponds to the number of minutes of physical acitivity you have had in the past week (in minutes). 150+ mean more than 150 minutes.", question6_options)
