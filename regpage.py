@@ -130,12 +130,12 @@ print(len(cols))
 print(len(question_answers))
 
 
-df = pd.DataFrame([question_answers], columns=cols)  
+'''df = pd.DataFrame([question_answers], columns=cols)  
 
 column_transformer = joblib.load("column_transformer.joblib.diab")
 
 pred = column_transform.transform(df)
-
+'''
 
 
 
