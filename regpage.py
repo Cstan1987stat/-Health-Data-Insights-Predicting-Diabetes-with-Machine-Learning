@@ -126,8 +126,8 @@ cols = ['general_health', 'physical_health_days', 'mental_health_days',
        'alcohol_consumption', 'binge_drinking', 'heavy_drinking',
        'diabetes_status', 'difficulty_walking']
 
-print(len(cols))
-print(len(question_answers))
+len(cols)
+len(question_answers)
 
 
 '''df = pd.DataFrame([question_answers], columns=cols)  
