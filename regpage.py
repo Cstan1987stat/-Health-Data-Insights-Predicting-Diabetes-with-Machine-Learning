@@ -1,7 +1,7 @@
 import streamlit as st
-#import joblib
+import joblib
 
-#model = joblib.load("lg.joblib.diab")
+model = joblib.load("lg.joblib.diab")
 
 st.title('Diabetes Classification Prediction')
 st.write("Follow the instructions to get a prediction")
