@@ -77,7 +77,7 @@ question17_dict = {"Didn't graduate High School": 1.0, "Graduated High School": 
 question17_ans = question17_dict[question17]
 
 question18_options = ["income < $15,000", "$15,000 < income < $25,000", "$25,000 < income < $35,000", "$35,000 < income < $50,000", "$50,000 < income < $100,000", "$100,000 < income < $200,000", "income > $200,000"]
-question18 = st.selectbox("Please select the option that corresponds to total yearly income")
+question18 = st.selectbox("Please select the option that corresponds to total yearly income", question18_options)
 question18_dict = {"income < $15,000": 1.0, "$15,000 < income < $25,000": 2.0, "$25,000 < income < $35,000": 3.0, "$35,000 < income < $50,000": 4.0, 
                    "$50,000 < income < $100,000": 5.0, "$100,000 < income < $200,000": 6.0, "income > $200,000": 7.0}
 question18_ans = question18_dict[question18]
