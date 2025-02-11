@@ -110,12 +110,12 @@ question23_ans = question23_dict[question23]
 
 
 
-question_answers = [[question1_ans, question2_ans, question3_ans, question4_ans, question5_ans,
+question_answers = [question1_ans, question2_ans, question3_ans, question4_ans, question5_ans,
                     question6_ans, question7_ans, question8_ans, question9_ans, question10_ans,
                     question11_ans, question12_ans, question13_ans, question14_ans, question15_ans, 
                     question16_ans, question17_ans, question18_ans, question19_ans, question20_ans,
                     question21_ans, question22_ans, question23_ans
-]]
+]
 
 cols = ['general_health', 'physical_health_days', 'mental_health_days',
        'has_health_plan', 'meets_aerobic_guidelines',
