@@ -27,3 +27,10 @@ The notebook titled 'analyzing the scoring.ipynb' documents the exploration of r
 **December 3, 2024 Update**
 
 Unfortunately, I have decided to conclude this project without any future updates. While it's disappointing, I had envisioned eventually creating an interactive interface where individuals could answer questions and the model would predict whether they are diabetic. However, I wanted the model to be decent, focusing primarily on the F1-score for the positive (diabetic) class. The severe class imbalance in the dataset, where the negative class vastly outnumbered the positive class, made this goal challenging. Although the dataset doesn't represent the entire world, this imbalance reflects the real-world scenario where more people are non-diabetic than diabetic. This project has been a valuable learning experience, despite the challenges in achieving my desired outcomes.
+
+
+
+**February 12, 2024 Update**
+
+The notebook titled 'a_fourth_attempt.ipynb' includes a new preprocessing strategy, training and saving a Logistic Regression model, and saving the new column transformer. 
+The python file 'regpage' includes the code used to create the streamlit app where the model can be tested with different input.
