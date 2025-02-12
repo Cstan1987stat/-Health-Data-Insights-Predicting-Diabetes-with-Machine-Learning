@@ -33,6 +33,4 @@ Unfortunately, I have decided to take a break from this project, possibly withou
 **February 12, 2024 Update**
 
 The notebook titled 'a_fourth_attempt.ipynb' includes a new preprocessing strategy, training and saving a Logistic Regression model, and saving the new column transformer. 
-The python file 'regpage' includes the code used to create the streamlit app where the model can be tested with different input.
-You can check out the Streamlit app by clicking on the following link: [Streamlit App](https://naeygzzy2kwrnvhjd3g7ya.streamlit.app/)
-
+The link for the Streamlit app can be found at the following repository [GitHub Streamlit App Page](https://github.com/Cstan1987stat/Diabetic-Prediction-App-Site)
