@@ -13,9 +13,11 @@ question1 = st.selectbox("Choose the option that best describes your general hea
 question1_dict = {"General Health is Excellent": 1.0, "General Health is Very Good": 2.0, "General Health is Good": 3.0, " General Health is Fair": 4.0, "General Health is Poor": 5.0}
 question1_ans = question1_dict[question1]
 
-question2_ans = st.number_input("Enter the value that represents how many of the past 30 days your physical health wasn't good from 0 to 30")
+question2_ans = st.number_input("Enter the value that represents how many of the past 30 days your physical health wasn't good from 0 to 30",
+                               min_value=0.0, max_value=30.0, step=1.0)
 
-question3_ans = st.number_input("Enter the value that represents how many of the past 30 days your mental health wans't good from 0 to 30")
+question3_ans = st.number_input("Enter the value that represents how many of the past 30 days your mental health wans't good from 0 to 30",
+                               min_value=0.0, max_value=30.0, step=1.0)
 
 question4_options = ["Yes", "No"]
 question4 = st.selectbox("If you have any form of insurance, select Yes. If not, select NO", question4_options)
