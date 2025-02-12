@@ -20,7 +20,7 @@ question3_ans = st.number_input("Enter the value that represents how many of the
                                min_value=0.0, max_value=30.0, step=1.0)
 
 question4_options = ["Yes", "No"]
-question4 = st.selectbox("If you have any form of insurance, select Yes. If not, select NO", question4_options)
+question4 = st.selectbox("If you have any form of insurance, select Yes. If not, select No", question4_options)
 question4_dict = {"Yes": 1.0, "No": 0.0}
 question4_ans = question4_dict[question4]
 
@@ -69,9 +69,9 @@ question13 = st.selectbox("Select the sex you were at birth", question13_options
 question13_dict = {"Male": 1.0, "Female": 0.0}
 question13_ans = question13_dict[question13]
 
-question14_ans = st.number_input("Enter your age: (18-99)")
+question14_ans = st.number_input("Enter your age: (18-99)", min_value=18.0, max_value=99.0, step=1.0)
 
-question15_ans = st.number_input("Enter your height in inches: (36-95)")
+question15_ans = st.number_input("Enter your height in inches: (36-95)", min_value=36.0, max_value=95.0)
 
 question16_ans = st.number_input("Enter your body mass index:")
 
