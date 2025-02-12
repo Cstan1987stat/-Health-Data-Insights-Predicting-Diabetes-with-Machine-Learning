@@ -133,11 +133,11 @@ column_transformer = joblib.load("column_transformer.joblib.diab")
 pred = column_transformer.transform(df)
 
 ans = model.predict(pred)
-prob = model.predict_proba(pred)
+prob = model.predict_proba(pred)[:,1]
 
 if ans == 1:
   st.write("The Logisitic Regression models has predicted you are diabetic.")
-  st.write(f"It has given a {prob[:,1]} probability you are diabetic.")
+  st.write(f"It has given a {prob} probability you are diabetic.")
 if ans == 0:
   st.write("The Logistic Regression model has predicted you aren't diabetic.")
-  st.write(f"It has given a {pred[:,1]} probability you are diabetic.")
+  st.write(f"It has given a {pred} probability you are diabetic.")
