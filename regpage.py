@@ -140,6 +140,9 @@ prob = model.predict_proba(pred)
 
 st.header("Predictions")
 if ans == 1:
-  st.write("The Logisitic Regression models has predicted you are diabetic.")
+  st.write("The Logisitic Regression model has predicted you are diabetic.")
 if ans == 0:
   st.write("The Logistic Regression model has predicted you aren't diabetic.")
+
+st.info("Note: This is a screening tool only and should not be used as a diagnosis.
+                Please consult with a healthcare provider for proper medical advice.")
