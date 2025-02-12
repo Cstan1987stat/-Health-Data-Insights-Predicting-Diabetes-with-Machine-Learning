@@ -3,7 +3,7 @@ import joblib
 import pandas as pd
 import numpy as np
 
-model = joblib.load("/mount/src/test/streamlit app/model/lg.joblib.diab")
+model = joblib.load("/mount/src/-Health-Data-Insights-Predicting-Diabetes-with-Machine-Learning/streamlit app/model/lg.joblib.diab")
 
 st.title('Diabetes Classification Prediction')
 st.write("Follow the instructions to get a prediction")
@@ -131,7 +131,7 @@ cols = ['general_health', 'physical_health_days', 'mental_health_days',
 
 df = pd.DataFrame([question_answers], columns=cols)  
 
-column_transformer = joblib.load("/mount/src/test/streamlit app/preprocessing/column_transformer.joblib.diab")
+column_transformer = joblib.load("/mount/src/-Health-Data-Insights-Predicting-Diabetes-with-Machine-Learning/streamlit app/preprocessing/column_transformer.joblib.diab")
 
 pred = column_transformer.transform(df)
 
