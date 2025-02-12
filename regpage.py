@@ -126,10 +126,6 @@ cols = ['general_health', 'physical_health_days', 'mental_health_days',
        'alcohol_consumption', 'binge_drinking', 'heavy_drinking',
        'difficulty_walking']
 
-st.write(len(cols))
-st.write(len(question_answers))
-
-
 df = pd.DataFrame([question_answers], columns=cols)  
 
 column_transformer = joblib.load("column_transformer.joblib.diab")
@@ -141,4 +137,4 @@ ans = model.predict(pred)
 if ans = 1:
   st.write("The Logisitic Regression models has predicted you are diabetic")
 if ans = 0:
- st.write("The Logistic Regression model has predicted you aren't diabetic")
+  st.write("The Logistic Regression model has predicted you aren't diabetic")
