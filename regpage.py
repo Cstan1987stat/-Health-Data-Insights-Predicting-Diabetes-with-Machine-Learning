@@ -144,5 +144,4 @@ if ans == 1:
 if ans == 0:
   st.write("The Logistic Regression model has predicted you aren't diabetic.")
 
-st.info("Note: This is a screening tool only and should not be used as a diagnosis.
-                Please consult with a healthcare provider for proper medical advice.")
+st.info("Note: This is a screening tool only and should not be used as a diagnosis. Please consult with a healthcare provider for proper medical advice.")
