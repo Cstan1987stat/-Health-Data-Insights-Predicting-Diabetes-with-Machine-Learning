@@ -1,6 +1,7 @@
 import streamlit as st
 import joblib
 import pandas as pd
+import numpy as np
 
 model = joblib.load("lg.joblib.diab")
 
@@ -140,4 +141,4 @@ if ans == 1:
   st.write(f"It has given a {np.round(prob[:,1],2)} probability you are diabetic.")
 if ans == 0:
   st.write("The Logistic Regression model has predicted you aren't diabetic.")
-  st.write(f"It has given a {np.round(prob[:,1],2} probability you are diabetic.")
+  st.write(f"It has given a {np.round(prob[:,1],2)} probability you are diabetic.")
