@@ -136,7 +136,7 @@ pred = column_transformer.transform(df)
 ans = model.predict(pred)
 prob = model.predict_proba(pred)
 
-st.subtitle("Predictions")
+st.header("Predictions")
 if ans == 1:
   st.write("The Logisitic Regression models has predicted you are diabetic.")
   st.write(f"It has given a {np.round(prob[0,1],2)} probability you are diabetic.")
