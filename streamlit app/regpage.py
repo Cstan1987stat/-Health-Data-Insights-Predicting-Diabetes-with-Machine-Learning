@@ -3,7 +3,7 @@ import joblib
 import pandas as pd
 import numpy as np
 
-model = joblib.load("/mount/src/test/streamlit app/lg.joblib.diab")
+model = joblib.load("/mount/src/test/streamlit app/model/lg.joblib.diab")
 
 st.title('Diabetes Classification Prediction')
 st.write("Follow the instructions to get a prediction")
