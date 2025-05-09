@@ -1,36 +1,15 @@
-# -Health-Data-Insights-Predicting-Diabetes-with-Machine-Learning
+# Health Data Insights Project
 
-This project utilizes machine learning techniques to predict diabetes status based on health and behavioral data from the CDC’s Behavioral Risk Factor Surveillance System (BRFSS) survey. By analyzing factors such as physical activity and BMI, the model aims to identify individuals at risk for diabetes, providing insights that could aid in early detection and intervention. Key evaluation metrics, including recall and f1-score, are prioritized to ensure a balanced assessment of model performance.
+## Project Overview
+This project utilizes machine learning techniques to predict diabetes status based on health and behavioral data from the CDC’s Behavioral Risk Factor Surveillance System (BRFSS) survey. By analyzing factors such as physical activity and BMI, the model aims to identify individuals at risk for diabetes, providing insights that could aid in early detection and intervention.
 
-The initial_notebook.ipynb file includes the following steps:
-* Loading the initial dataset
-* Selecting desired columns
-* Filtering rows based on specified criteria for each selected column
-* Performing a basic exploratory analysis of the predictor and target variables
+## Completed Work
+* **(Initial Notebook)[https://github.com/Cstan1987stat/-Health-Data-Insights-Predicting-Diabetes-with-Machine-Learning/blob/main/notebooks/inital%20notebook.ipynb]** : This notebook outlines how the dataset was obtained, explains the features and their values, and details the process of selecting relevant variables. It also includes filtering and transforming feature values, renaming columns, and conducting basic exploratory data analysis on both continuous and discrete features.
+* **(First Model Buidling Process)[https://github.com/Cstan1987stat/-Health-Data-Insights-Predicting-Diabetes-with-Machine-Learning/blob/main/notebooks/first%20model%20building%20process.ipynb]** Applied preprocessing by log-transforming and standard scaling continuous features, and standard scaling discrete features. Trained Logistic Regression, Random Forest, and Histogram-based Gradient Boosting Classifier models. Improved the Logistic Regression model’s F1-score from 0.28 to 0.46 by adjusting the class_weight parameter. Used RandomizedSearchCV to tune hyperparameters and achieved an F1-score of 0.48 with the Histogram-based Gradient Boosting Classifier on both training and testing sets.
+* **(A Second Attempt)[https://github.com/Cstan1987stat/-Health-Data-Insights-Predicting-Diabetes-with-Machine-Learning/blob/main/notebooks/a%20second%20attempt.ipynb]** : Changed the preprocessing pipeline by log-transforming and scaling continuous features, and one-hot encoding discrete features. Tuned Logistic Regression, Random Forest, Histogram-based Gradient Boosting, and XGBoost models. Despite efforts, the highest F1-score achieved remained at 0.48.
+* **(Analyzing the Scoring)[https://github.com/Cstan1987stat/-Health-Data-Insights-Predicting-Diabetes-with-Machine-Learning/blob/main/notebooks/analyzing%20the%20scoring.ipynb]** : Evaluated model performance using confusion matrices for both Histogram-based Gradient Boosting and XGBoost models. Experimented with adjusting probability thresholds for classification and applied SMOTE to address class imbalance. Neither threshold tuning nor SMOTE led to significant improvements; SMOTE, in particular, caused the model to overfit and perform poorly on test data.
+* **(A Fourth Attempt)[https://github.com/Cstan1987stat/-Health-Data-Insights-Predicting-Diabetes-with-Machine-Learning/blob/main/notebooks/a_fourth_attempt.ipynb]** : Revised the preprocessing strategy by splitting discrete features into ordinal and nominal categories. Tuned a Logistic Regression model and evaluated performance on the test set. Successfully exported the final trained model and the corresponding column transformer using joblib, which were later deployed in a **[Streamlit App](https://diabetic-prediction-app-4321.streamlit.app/)**.
 
+The page for the code to create the streamlit app can be found here: **[GitHub Streamlit App Page](https://github.com/Cstan1987stat/Diabetic-Prediction-App-Site)**.
 
-**November 25, 2024 Update**
-
-The notebook titled 'first model building process.ipynb' documents the initial fitting of three models: Logistic Regression, Random Forest Classifier, and Histogram Gradient Boosting Classifier. The highest f1-score achieved so far is 0.48, obtained with the Histogram Gradient Boosting Classifier. While this is below the desired performance, it represents a good starting point. There's significant opportunity for improvement, and I plan to explore further refinements and optimizations to enhance the model's performance.
-
-
-**November 26, 2024 Update**
-
-The notebook titled 'a_second_attempt.ipynb' documents the new preprocessing steps applied to the training and testing predictors (one-hot encoding of discrete variables), along with stratification of the target variable. The objective was to fit multiple models, including Logistic Regression, Random Forest Classifier, Balanced Random Forest Classifier, Histogram Gradient Boosting Classifier, and XGB Classifier, to achieve a higher F1 score for diabetic instances. However, the best F1 score remained at 0.48, achieved by both the Histogram Gradient Boosting Classifier and the XGB Classifier.
-
-
-**November 28, 2024 Update**
-
-The notebook titled 'analyzing the scoring.ipynb' documents the exploration of recall, precision, and F1 score for the Histogram Gradient Boosting (HistGradientBoost) and XGBoost (XGB) classifier models predicting whether an individual is diabetic. Attempts were made to adjust the threshold used by each model to determine whether the predicted probability warranted a diabetic or non-diabetic classification. Additionally, oversampling of the minority class (SMOTE) and a combination of oversampling the minority class with undersampling the majority class (SMOTE combined) were applied to the training data. The issue with the threshold adjustments was that the F1 score only reached a maximum of 0.48 for both the HistGradientBoost and XGBoost classifiers. If the focus were instead on maximizing recall or precision, it would have been easy to adjust the threshold to achieve a suitable score. For the SMOTE models, the model with the oversampled minority class failed to generalize to the testing data, as the training data had approximately balanced classes, but the testing data was heavily imbalanced. For the combined-SMOTE model, there were no noticeable improvements at all.
-
-
-**December 3, 2024 Update**
-
-Unfortunately, I have decided to take a break from this project, possibly without any future updates. While it's disappointing, I had envisioned eventually creating an interactive interface where individuals could answer questions and the model would predict whether they are diabetic. However, I wanted the model to be decent, focusing primarily on the F1-score for the positive (diabetic) class. The severe class imbalance in the dataset, where the negative class vastly outnumbered the positive class, made this goal challenging. Although the dataset doesn't represent the entire world, this imbalance reflects the real-world scenario where more people are non-diabetic than diabetic. This project has been a valuable learning experience, despite the challenges in achieving my desired outcomes.
-
-
-
-**February 12, 2024 Update**
-
-The notebook titled 'a_fourth_attempt.ipynb' includes a new preprocessing strategy, training and saving a Logistic Regression model, and saving the new column transformer. 
-The link for the Streamlit app can be found at the following repository [GitHub Streamlit App Page](https://github.com/Cstan1987stat/Diabetic-Prediction-App-Site)
+## Conclusion
