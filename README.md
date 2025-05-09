@@ -13,4 +13,6 @@ This project utilizes machine learning techniques to predict diabetes status bas
 The page for the code to create the streamlit app can be found here: **[GitHub Streamlit App Page](https://github.com/Cstan1987stat/Diabetic-Prediction-App-Site)**.
 
 ## Conclusion
+This project was a valuable learning experience in both machine learning and the practical realities of working with large datasets. Most of the development took place in Visual Studio Code, and I worked with the full dataset of around 200,000 rows. This placed a heavy load on my laptop’s processing power and memory, often causing it to overheat. I believe this stress contributed to my old computer eventually breaking down—something I hadn’t anticipated when starting the project. This experience taught me the importance of understanding the resource demands of data-intensive tasks and being mindful of the tools and hardware needed to support them.
 
+In terms of technical lessons, two main areas stand out. First, I would invest more time in a thorough and complex data analysis phase before modeling. Second, I would focus more on the model’s output probabilities rather than just the predicted class labels, especially in imbalanced classification problems like this one. These insights will guide how I approach similar projects in the future.
